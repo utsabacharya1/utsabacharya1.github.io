@@ -5,23 +5,54 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f7f9;
-      color: #333;
       margin: 0;
       padding: 0;
+      scroll-behavior: smooth; /* Smooth scrolling */
+      background-color: #f4f7f9;
+      color: #333;
     }
 
-    /* Header with photo and info */
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #4CAF50;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
     header {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 20px;
-      background-color: #4CAF50;
-      color: white;
-      padding: 50px 20px;
       flex-wrap: wrap;
       text-align: center;
+      padding: 50px 20px;
     }
 
     header img {
@@ -31,33 +62,39 @@
       border: 3px solid white;
     }
 
-    header div h1 {
+    header h1 {
       margin: 0;
-      font-size: 3em; /* Larger name */
+      font-size: 3em;
     }
 
-    header div p {
+    header p {
       margin: 5px 0;
-      font-size: 1.8em; /* Larger headline and NEPSA role */
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    section {
-      background-color: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 1.3em;
     }
 
     h2 {
       border-bottom: 2px solid #4CAF50;
       padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .cv-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .cv-button:hover {
+      background-color: #45a049;
     }
 
     footer {
@@ -67,131 +104,80 @@
       color: white;
     }
 
-    /* Collapsible CV Section */
-    .collapsible {
-      background-color: #eee;
-      color: #333;
-      cursor: pointer;
-      padding: 10px 20px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 1.1em;
-      margin-top: 10px;
-      border-radius: 5px;
-    }
-
-    .active, .collapsible:hover {
-      background-color: #ddd;
-    }
-
-    .content {
-      padding: 0 20px;
-      display: none;
-      overflow: hidden;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="Utsab_Photo.jpeg" alt="Utsab Acharya">
-    <div>
-      <h1>Utsab Acharya</h1>
-      <p>Biomedical Engineer | Physicist | Data Analyst</p>
-      <p>President, Nepali Student Association at Ole Miss (NEPSA)</p>
-    </div>
-  </header>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#cv">CV</a>
+  </nav>
 
-  <main>
+  <!-- Home Section -->
+  <section id="Home">
+    <header>
+      <img src="Utsab_Photo.jpeg" alt="Utsab Acharya">
+      <div>
+        <h1>Utsab Acharya</h1>
+        <p>Biomedical Engineer | Physicist | Data Analyst</p>
+        <p>President, Nepali Student Association at Ole Miss (NEPSA)</p>
+      </div>
+    </header>
+  </section>
 
-    <section>
-      <h2>Current Study & Projects</h2>
-      <p><strong>Graduate Research Assistant</strong> at University of Mississippi, Department of Biomedical Engineering (Aug 2025 – Present)</p>
-      <ul>
-        <li>Investigating ocular biomechanics related to myopia progression, focusing on peripapillary sclera and optic nerve head (ONH) deformation.</li>
-        <li>Developing finite element models using SolidWorks, ABAQUS, Gmsh, FEBio Studio/Solver.</li>
-        <li>Performing inverse finite element analysis to estimate mechanical properties of ocular tissues like PPS & ONH.</li>
-        <li>Ongoing projects in computational modeling, biomechanics, and data analysis using Python and MATLAB.</li>
-        <li>Working on the <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory (LAB) Website</a></li>
-      </ul>
-    </section>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p><strong>Graduate Research Assistant</strong> at University of Mississippi, Department of Biomedical Engineering (Aug 2025 – Present)</p>
+    <ul>
+      <li>Investigating ocular biomechanics related to myopia progression, focusing on peripapillary sclera and optic nerve head (ONH) deformation.</li>
+      <li>Developing finite element models using SolidWorks, ABAQUS, Gmsh, FEBio Studio/Solver.</li>
+      <li>Performing inverse finite element analysis to estimate mechanical properties of ocular tissues.</li>
+      <li>Ongoing projects in computational modeling, biomechanics, and data analysis using Python and MATLAB.</li>
+      <li>Working on the <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory (LAB) Website</a></li>
+    </ul>
+  </section>
 
-    <button type="button" class="collapsible">Full CV & Past Experience</button>
-    <div class="content">
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>Ph.D. Biomedical Engineering, University of Mississippi (2025-Present)</li>
-          <li>MS Physics, University of Mississippi (2025)</li>
-          <li>MSc Physics, Tribhuvan University, Nepal (2017)</li>
-          <li>BSc Physics, Tribhuvan University, Nepal (2013)</li>
-        </ul>
-      </section>
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Ph.D. Biomedical Engineering, University of Mississippi (2025-Present)</li>
+      <li>MS Physics, University of Mississippi (2025)</li>
+      <li>MSc Physics, Tribhuvan University, Nepal (2017)</li>
+      <li>BSc Physics, Tribhuvan University, Nepal (2013)</li>
+    </ul>
+  </section>
 
-      <section>
-        <h2>Research Experience</h2>
-        <p>See CV details for past research projects in ocular biomechanics, ultrasound physics, computational modeling, and data analysis.</p>
-      </section>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Finite Element Analysis: ABAQUS, FEBio, SolidWorks, Gmsh</li>
+      <li>Programming & Data Analysis: Python, MATLAB, SQL</li>
+      <li>Biomedical & Computational Tools: Ultrasound, Signal Processing, Tissue Mechanics</li>
+      <li>General: Scientific Writing, Project Management, Presentations</li>
+    </ul>
+  </section>
 
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>Finite Element Analysis: ABAQUS, FEBio, SolidWorks, Gmsh</li>
-          <li>Programming & Data Analysis: Python, MATLAB, SQL</li>
-          <li>Biomedical & Computational Tools: Ultrasound, Signal Processing, Tissue Mechanics</li>
-          <li>General: Scientific Writing, Project Management, Presentations</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Teaching Experience</h2>
-        <p>Graduate Teaching Assistant (University of Mississippi) | Physics Lecturer (Canvas International College) | Science Teacher (Kaushal Boarding School)</p>
-      </section>
-
-      <section>
-        <h2>Awards & Leadership</h2>
-        <p>Summer Research Grants, Campus Scholarship, Nepali Student Association President, Physics Graduate Student Association volunteer</p>
-      </section>
-    </div>
-
-  </main>
+  <!-- CV Section -->
+  <section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <p>Click the button below to download my full CV:</p>
+    <a href="Acharya, Utsab CV_New.pdf" target="_blank" download class="cv-button">Download Full CV</a>
+  </section>
 
   <footer>
     Contact: uacharya@go.olemiss.edu | utsab.acharyaphy@gmail.com
   </footer>
 
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
-
 </body>
 </html>
+
 
 
 
