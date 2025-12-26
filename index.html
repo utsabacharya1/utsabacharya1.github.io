@@ -11,21 +11,34 @@
       padding: 0;
     }
 
+    /* Header with photo and info */
     header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
       background-color: #4CAF50;
       color: white;
       padding: 50px 20px;
+      flex-wrap: wrap;
       text-align: center;
     }
 
-    header h1 {
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    header div h1 {
       margin: 0;
       font-size: 2.5em;
     }
 
-    header p {
-      margin: 10px 0 0;
-      font-size: 1.2em;
+    header div p {
+      margin: 5px 0;
+      font-size: 1.1em;
     }
 
     main {
@@ -82,13 +95,26 @@
       margin-bottom: 20px;
     }
 
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Utsab Acharya</h1>
-    <p>Biomedical Engineer | Physicist | Data Analyst</p>
+    <img src="profile.jpg" alt="Utsab Acharya">
+    <div>
+      <h1>Utsab Acharya</h1>
+      <p>Biomedical Engineer | Physicist | Data Analyst</p>
+      <p>President, Nepali Student Association at Ole Miss (NEPSA)</p>
+    </div>
   </header>
 
   <main>
@@ -101,6 +127,7 @@
         <li>Developing finite element models using SolidWorks, ABAQUS, Gmsh, FEBio Studio/Solver.</li>
         <li>Performing inverse finite element analysis to estimate mechanical properties of ocular tissues.</li>
         <li>Ongoing projects in computational modeling, biomechanics, and data analysis using Python and MATLAB.</li>
+        <li>Working on the <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory (ALAB) Website</a></li>
       </ul>
     </section>
 
@@ -165,4 +192,5 @@
 
 </body>
 </html>
+
 
