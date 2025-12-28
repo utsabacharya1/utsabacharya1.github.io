@@ -55,12 +55,19 @@
       padding: 50px 20px;
     }
 
-    header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid white;
-    }
+   header img {
+  width: 280px;          /* larger image */
+  height: auto;          /* keep proportions */
+  border-radius: 12px;   /* rectangular with soft corners */
+  border: 3px solid white;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  header img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
 
     header h1 {
       margin: 0;
