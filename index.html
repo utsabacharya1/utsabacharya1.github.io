@@ -55,19 +55,20 @@
       padding: 50px 20px;
     }
 
-   header img {
-  width: 280px;          /* larger image */
-  height: auto;          /* keep proportions */
-  border-radius: 12px;   /* rectangular with soft corners */
-  border: 3px solid white;
-  object-fit: cover;
-}
-@media (max-width: 768px) {
-  header img {
-    width: 80%;
-    max-width: 300px;
-  }
-}
+    header img {
+      width: 280px;          /* larger image */
+      height: auto;          /* keep proportions */
+      border-radius: 12px;   /* rectangular with soft corners */
+      border: 3px solid white;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 80%;
+        max-width: 300px;
+      }
+    }
 
     header h1 {
       margin: 0;
@@ -111,6 +112,25 @@
       color: white;
     }
 
+    /* Social Profiles Styling */
+    .social-profiles {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .social-profiles a img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.2s, filter 0.2s;
+    }
+
+    .social-profiles a img:hover {
+      transform: scale(1.2);
+      filter: brightness(1.2);
+    }
+
   </style>
 </head>
 <body>
@@ -132,6 +152,20 @@
         <h1>Utsab Acharya</h1>
         <p>Biomedical Engineer | Physicist | Data Analyst</p>
         <p>President, Nepali Student Association at Ole Miss (NEPSA)</p>
+
+        <!-- Social Profiles -->
+        <div class="social-profiles">
+          <a href="https://www.linkedin.com/in/utsabacharya" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+          <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Scholar_icon.svg" alt="Google Scholar">
+          </a>
+          <a href="https://www.facebook.com/utsababhagi1" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+          </a>
+        </div>
+
       </div>
     </header>
   </section>
@@ -153,8 +187,8 @@
   <section id="education">
     <h2>Education</h2>
     <ul>
-      <li>Ph.D. Biomedical Engineering, University of Mississippi (2025-Present)</li>
-      <li>MS Physics, University of Mississippi (2025)</li>
+      <li>Ph.D. Biomedical Engineering, University of Mississippi, USA (2025-Present)</li>
+      <li>MS Physics, University of Mississippi, USA (2025)</li>
       <li>MSc Physics, Tribhuvan University, Nepal (2017)</li>
       <li>BSc Physics, Tribhuvan University, Nepal (2013)</li>
     </ul>
@@ -175,8 +209,14 @@
   <!-- CV Section -->
   <section id="cv">
     <h2>Curriculum Vitae</h2>
-    <p>Click the button below to download my full CV:</p>
-    <a href="Acharya, Utsab CV_New.pdf" target="_blank" download class="cv-button">Download Full CV</a>
+    <p>Click the button below to view my full CV:</p>
+    <a 
+      href="Acharya, Utsab CV_New.pdf" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="cv-button">
+      View Full CV
+    </a>
   </section>
 
   <footer>
@@ -185,6 +225,7 @@
 
 </body>
 </html>
+
 
 
 
