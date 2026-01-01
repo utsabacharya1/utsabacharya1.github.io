@@ -7,7 +7,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      scroll-behavior: smooth; /* Smooth scrolling */
+      scroll-behavior: smooth;
       background-color: #f4f7f9;
       color: #333;
     }
@@ -56,9 +56,9 @@
     }
 
     header img {
-      width: 280px;          /* larger image */
-      height: auto;          /* keep proportions */
-      border-radius: 12px;   /* rectangular with soft corners */
+      width: 280px;
+      height: auto;
+      border-radius: 12px;
       border: 3px solid white;
       object-fit: cover;
     }
@@ -115,28 +115,23 @@
     /* Social Profiles Styling */
     .social-profiles-container {
       margin-top: 15px;
-      text-align: center;
-    }
-
-    .social-profiles-container p {
-      margin-bottom: 8px;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-
-    .social-profiles {
       display: flex;
       justify-content: center;
-      gap: 15px;
+      align-items: center;
+      gap: 10px;
     }
 
-    .social-profiles a img {
+    .social-profiles-container span {
+      font-weight: bold;
+    }
+
+    .social-profiles-container a img {
       width: 30px;
       height: 30px;
       transition: transform 0.2s, filter 0.2s;
     }
 
-    .social-profiles a img:hover {
+    .social-profiles-container a img:hover {
       transform: scale(1.2);
       filter: brightness(1.2);
     }
@@ -165,21 +160,19 @@
 
         <!-- Social Profiles Section -->
         <div class="social-profiles-container">
-          <p>Profiles</p>
-          <div class="social-profiles">
-            <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/utsabacharya" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
-            </a>
-            <!-- Google Scholar -->
-            <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Scholar_icon.png" alt="Google Scholar">
-            </a>
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/utsababhagi1" target="_blank" rel="noopener noreferrer">
-              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-            </a>
-          </div>
+          <span>Profiles:</span>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/utsabacharya" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+          </a>
+          <!-- Google Scholar (local file) -->
+          <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+            <img src="google-scholar.png" alt="Google Scholar">
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/utsababhagi1" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+          </a>
         </div>
 
       </div>
@@ -216,7 +209,7 @@
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li> Inverse Finite Element Analysis: Mechanical properties of Peripapillary Sclera</li>
+      <li>Inverse Finite Element Analysis: Mechanical properties of Peripapillary Sclera</li>
       <li>Finite Element Analysis: ABAQUS, FEBio, SolidWorks, Gmsh</li>
       <li>Programming & Data Analysis: Python, MATLAB, SQL</li>
       <li>Biomedical & Computational Tools: Ultrasound, Signal Processing, Tissue Mechanics</li>
@@ -243,6 +236,7 @@
 
 </body>
 </html>
+
 
 
 
