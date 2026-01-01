@@ -113,8 +113,18 @@
     }
 
     /* Social Profiles Styling */
-    .social-profiles {
+    .social-profiles-container {
       margin-top: 15px;
+      text-align: center;
+    }
+
+    .social-profiles-container p {
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .social-profiles {
       display: flex;
       justify-content: center;
       gap: 15px;
@@ -153,17 +163,23 @@
         <p>Biomedical Engineer | Physicist | Data Analyst</p>
         <p>President, Nepali Student Association at Ole Miss (NEPSA)</p>
 
-        <!-- Social Profiles -->
-        <div class="social-profiles">
-          <a href="https://www.linkedin.com/in/utsabacharya" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
-          </a>
-          <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google_Scholar_icon.svg" alt="Google Scholar">
-          </a>
-          <a href="https://www.facebook.com/utsababhagi1" target="_blank" rel="noopener noreferrer">
-            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
-          </a>
+        <!-- Social Profiles Section -->
+        <div class="social-profiles-container">
+          <p>Profiles</p>
+          <div class="social-profiles">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/utsabacharya" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Google_Scholar_icon.png" alt="Google Scholar">
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/utsababhagi1" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+            </a>
+          </div>
         </div>
 
       </div>
@@ -173,13 +189,15 @@
   <!-- About Section -->
   <section id="about">
     <h2>About</h2>
-    <p><strong>Graduate Research Assistant</strong> at University of Mississippi, Department of Biomedical Engineering (Aug 2025 – Present)</p>
+    <p>
+      <strong>Graduate Research Assistant at <a href="https://www.visionlaboratory.org/people" target="_blank" rel="noopener noreferrer">The Vision Laboratory</a>, University of Mississippi</strong> 
+      (Aug 2025 – Present)
+    </p>
     <ul>
       <li>Investigating ocular biomechanics related to myopia progression, focusing on peripapillary sclera and optic nerve head (ONH) deformation.</li>
       <li>Developing Finite Element (FE) models using SolidWorks, ABAQUS, Gmsh, FEBio Studio/Solver.</li>
       <li>Performing Inverse Finite Element Analysis (Inverse-FEA) to estimate mechanical properties of ocular tissues like PPS and ONH.</li>
       <li>Ongoing projects in computational modeling, biomechanics, and data analysis using Python and MATLAB.</li>
-      <li>Working on the <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory (LAB) Website</a></li>
     </ul>
   </section>
 
@@ -225,6 +243,7 @@
 
 </body>
 </html>
+
 
 
 
