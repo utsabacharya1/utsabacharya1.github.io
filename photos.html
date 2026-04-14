@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Utsab Acharya | Photo Collection</title>
 
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    nav {
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+      background-color: #fff;
+    }
+
+    nav .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 1rem;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      transition: all 0.25s ease;
+    }
+
+    nav a:hover {
+      background-color: #0b4f8a;
+      color: white;
+      border-color: #0b4f8a;
+    }
+
+    nav a.active {
+      background-color: #0b4f8a;
+      color: white;
+      border-color: #0b4f8a;
+    }
+
+    .section {
+      padding: 50px 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 30px;
+    }
+
+    /* PHOTO GRID */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .photo-item {
+      text-align: center;
+    }
+
+    .photo-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-item img:hover {
+      transform: scale(1.03);
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
+      padding: 20px 0 30px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .caption {
+        font-size: 0.9rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container">
+      <div class="nav-links">
+        <a href="index.html">About Me</a>
+        <a href="cv.html">Curriculum Vitae</a>
+        <a href="outreach.html">Community Outreach</a>
+        <a href="research.html">Research Papers</a>
+        <a href="photos.html" class="active">Photo Collection</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="container section">
+    <h1>Photo Collection</h1>
+
+    <div class="photo-grid">
+
+      <!-- 1 -->
+      <div class="photo-item">
+        <img src="Research Presentation.jpeg" alt="Research Presentation">
+        <div class="caption">
+          Research presentation at Biomedical Engineering Seminar
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="photo-item">
+        <img src="Mississippi Day 2026.jpeg" alt="Mississippi Day">
+        <div class="caption">
+          Explaining ongoing Vision Lab research during Mississippi Day 2026
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="photo-item">
+        <img src="Mississippi Region VII Science Fair 2026.jpeg" alt="Science Fair">
+        <div class="caption">
+          Mississippi Region VII Science Fair 2026
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="photo-item">
+        <img src="MTS Bionix Training.jpeg" alt="MTS Training">
+        <div class="caption">
+          MTS Bionix Training session
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="photo-item">
+        <img src="Poster Presentation..jpeg" alt="Poster Presentation">
+        <div class="caption">
+          Poster presentation at Department of Physics and Astronomy
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    uacharya@go.olemiss.edu | utsab.acharyaphy@gmail.com | (+1) 6623800669
+  </footer>
+
+</body>
+</html>
