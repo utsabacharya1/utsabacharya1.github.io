@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Utsab Acharya | Curriculum Vitae</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utsab Acharya | About Me</title>
 
   <style>
     body {
@@ -20,6 +20,7 @@
       padding: 0 24px;
     }
 
+    /* NAVIGATION BAR */
     nav {
       border-bottom: 1px solid #ddd;
       padding: 18px 0;
@@ -33,6 +34,7 @@
       justify-content: center;
     }
 
+    /* TAB STYLE (RECTANGLE ROUNDED) */
     nav a {
       text-decoration: none;
       color: #333;
@@ -56,48 +58,76 @@
       border-color: #0b4f8a;
     }
 
-    .section {
-      padding: 50px 0;
+    /* HERO SECTION */
+    .hero {
+      padding: 60px 0 40px;
     }
 
-    h1 {
-      text-align: center;
+    .hero-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 600px;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
       font-weight: normal;
-      margin-bottom: 30px;
+      margin: 0 0 12px 0;
     }
 
-    h2 {
-      margin-top: 30px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 6px;
+    .hero-text h2 {
+      font-size: 1.2rem;
       font-weight: normal;
+      margin: 0 0 20px 0;
+      color: #444;
     }
 
-    ul {
-      margin-left: 20px;
+    .hero-text p {
+      margin: 0 0 18px 0;
+      font-size: 1.05rem;
+      text-align: justify;
     }
 
-    .cv-button {
+    /* IMAGE (FIXED SIZE - BIGGER) */
+    .hero-image {
+      flex: 0 0 350px;
+      text-align: right;
+    }
+
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border: 1px solid #ccc;
+      padding: 4px;
+      background-color: #fff;
+    }
+
+    /* LINKS */
+    .links {
+      margin-top: 18px;
+    }
+
+    .links a {
       display: inline-block;
-      margin-top: 25px;
-      padding: 10px 20px;
-      border-radius: 20px;
-      border: 1px solid #0b4f8a;
-      background-color: #0b4f8a;
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .cv-button:hover {
-      background-color: white;
+      margin-right: 18px;
+      margin-bottom: 10px;
       color: #0b4f8a;
+      text-decoration: none;
     }
 
-    .center {
-      text-align: center;
+    .links a:hover {
+      text-decoration: underline;
     }
 
+    /* FOOTER */
     footer {
       border-top: 1px solid #ddd;
       margin-top: 40px;
@@ -105,6 +135,31 @@
       text-align: center;
       font-size: 0.95rem;
       color: #555;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 850px) {
+      .hero-content {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      .hero-text {
+        flex: 1 1 auto;
+      }
+
+      .hero-text h1,
+      .hero-text h2 {
+        text-align: center;
+      }
+
+      .hero-image {
+        text-align: center;
+      }
+
+      .links {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -115,8 +170,8 @@
   <nav>
     <div class="container">
       <div class="nav-links">
-        <a href="index.html">About Me</a>
-        <a href="cv.html" class="active">Curriculum Vitae</a>
+        <a href="index.html" class="active">About Me</a>
+        <a href="cv.html">Curriculum Vitae</a>
         <a href="outreach.html">Community Outreach</a>
         <a href="research.html">Research Papers</a>
         <a href="photos.html">Photo Collection</a>
@@ -124,35 +179,54 @@
     </div>
   </nav>
 
-  <!-- MAIN -->
-  <div class="container section">
-    <h1>Curriculum Vitae</h1>
+  <!-- MAIN CONTENT -->
+  <main class="hero">
+    <div class="container">
+      <div class="hero-content">
 
-    <!-- EDUCATION -->
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Ph.D. in Biomedical Engineering</strong>, University of Mississippi (2025 – Present)</li>
-      <li><strong>M.S. in Physics</strong>, University of Mississippi (2025)</li>
-      <li><strong>M.Sc. in Physics</strong>, Tribhuvan University, Nepal (2017)</li>
-      <li><strong>B.Sc. in Physics</strong>, Tribhuvan University, Nepal (2013)</li>
-    </ul>
+        <!-- TEXT -->
+        <div class="hero-text">
+          <h1>Utsab Acharya</h1>
+          <h2>PhD Student in Biomedical Engineering | Physicist | Data Analyst</h2>
 
-    <!-- AWARDS -->
-    <h2>Awards & Honors</h2>
-    <ul>
-      <li>Summer Research Grant, University of Mississippi (2023 & 2024)</li>
-      <li>Campus Scholarship Award, TU Amrit Campus (2009 – 2013)</li>
-      <li>Recognized for academic excellence during Master’s program, TU Amrit Campus (2014 – 2017)</li>
-    </ul>
+          <p>
+            Hello, and welcome to my website. My name is Utsab Acharya, and I am currently a PhD student 
+            in Biomedical Engineering at the University of Mississippi. I have an academic background in physics, 
+            and my research interests connect biomechanics, computational modeling, biomedical acoustics, and 
+            data analysis.
+          </p>
 
-    <!-- CV DOWNLOAD -->
-    <div class="center">
-      <a href="Acharya, Utsab CV_New.pdf" target="_blank" class="cv-button">
-        View Full Curriculum Vitae
-      </a>
+          <p>
+            At present, I am working in the 
+            <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory</a> 
+            at the University of Mississippi under the supervision of 
+            <strong>Dr. Yi Hua</strong>. My current research focuses on ocular biomechanics, especially the 
+            deformation of the sclera and optic nerve head in relation to myopia progression.
+          </p>
+
+          <p>
+            My work involves tools such as SolidWorks, ABAQUS, Gmsh, and FEBio Studio/Solver. I am also interested 
+            in biomedical acoustics, computational physics, and interdisciplinary research connecting engineering 
+            and biological systems.
+          </p>
+
+          <!-- LINKS -->
+          <div class="links">
+            <a href="https://www.linkedin.com/in/utsabacharya" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://www.facebook.com/utsababhagi1" target="_blank">Facebook</a>
+           
+          </div>
+        </div>
+
+        <!-- IMAGE -->
+        <div class="hero-image">
+          <img src="Utsab_Photo.jpeg" alt="Utsab Acharya">
+        </div>
+
+      </div>
     </div>
-
-  </div>
+  </main>
 
   <!-- FOOTER -->
   <footer>
