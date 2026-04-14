@@ -101,12 +101,58 @@
       font-size: 0.95rem;
       color: #555;
     }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      nav .nav-links {
+        gap: 10px;
+        justify-content: center;
+      }
+
+      nav a {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+      }
+
+      .section {
+        padding: 30px 0 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .paper-title {
+        font-size: 1rem;
+      }
+
+      .paper p {
+        font-size: 0.95rem;
+      }
+
+      footer {
+        font-size: 0.85rem;
+        padding: 18px 12px 24px;
+        line-height: 1.6;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <div class="container">
       <div class="nav-links">
@@ -119,14 +165,11 @@
     </div>
   </nav>
 
-  <!-- MAIN -->
   <div class="container section">
     <h1>Research Papers & Thesis</h1>
 
-    <!-- JOURNAL PAPERS -->
     <h2>Journal Papers</h2>
 
-    <!-- PAPER 1 (LATEST) -->
     <div class="paper">
       <div class="paper-title">
         Exploring the therapeutic potential of Tetrastigma bracteolatum (Wall.) Planch. methanol extract and its different fractions: in vitro, in vivo, and in silico approaches
@@ -139,7 +182,6 @@
       </p>
     </div>
 
-    <!-- PAPER 2 -->
     <div class="paper">
       <div class="paper-title">
         Self-Medication Practices in Bangladesh: A Comparative Cross-Sectional Study Between Urban and Rural Communities
@@ -152,7 +194,6 @@
       </p>
     </div>
 
-    <!-- THESIS -->
     <h2>Thesis</h2>
 
     <div class="paper">
@@ -164,7 +205,6 @@
 
   </div>
 
-  <!-- FOOTER -->
   <footer>
     uacharya@go.olemiss.edu | utsab.acharyaphy@gmail.com | (+1) 6623800669
   </footer>
