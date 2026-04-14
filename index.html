@@ -34,7 +34,7 @@
       justify-content: center;
     }
 
-    /* TAB STYLE (RECTANGLE ROUNDED) */
+    /* TAB STYLE */
     nav a {
       text-decoration: none;
       color: #333;
@@ -95,7 +95,7 @@
       text-align: justify;
     }
 
-    /* IMAGE (FIXED SIZE - BIGGER) */
+    /* IMAGE */
     .hero-image {
       flex: 0 0 350px;
       text-align: right;
@@ -137,28 +137,81 @@
       color: #555;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 850px) {
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      nav .nav-links {
+        gap: 10px;
+        justify-content: center;
+      }
+
+      nav a {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+      }
+
+      .hero {
+        padding: 30px 0 20px;
+      }
+
       .hero-content {
         flex-direction: column-reverse;
         align-items: center;
+        gap: 25px;
       }
 
       .hero-text {
         flex: 1 1 auto;
+        min-width: auto;
+        width: 100%;
       }
 
-      .hero-text h1,
-      .hero-text h2 {
+      .hero-text h1 {
+        font-size: 2rem;
         text-align: center;
+      }
+
+      .hero-text h2 {
+        font-size: 1.05rem;
+        text-align: center;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+        text-align: left;
       }
 
       .hero-image {
+        flex: 1 1 auto;
+        width: 100%;
         text-align: center;
+      }
+
+      .hero-image img {
+        width: 85%;
+        max-width: 320px;
       }
 
       .links {
         text-align: center;
+      }
+
+      .links a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+        padding: 18px 12px 24px;
+        line-height: 1.6;
       }
     }
   </style>
@@ -166,7 +219,6 @@
 
 <body>
 
-  <!-- NAVIGATION -->
   <nav>
     <div class="container">
       <div class="nav-links">
@@ -179,47 +231,42 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
   <main class="hero">
     <div class="container">
       <div class="hero-content">
 
-        <!-- TEXT -->
         <div class="hero-text">
           <h1>Utsab Acharya</h1>
           <h2>PhD Student in Biomedical Engineering | Physicist | Data Analyst</h2>
 
           <p>
-            Hello, and welcome to my website. My name is Utsab Acharya, and I am currently a PhD student 
-            in Biomedical Engineering at the University of Mississippi. I have an academic background in physics, 
-            and my research interests connect biomechanics, computational modeling, biomedical acoustics, and 
+            Hello, and welcome to my website. My name is Utsab Acharya, and I am currently a PhD student
+            in Biomedical Engineering at the University of Mississippi. I have an academic background in physics,
+            and my research interests connect biomechanics, computational modeling, biomedical acoustics, and
             data analysis.
           </p>
 
           <p>
-            At present, I am working in the 
-            <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory</a> 
-            at the University of Mississippi under the supervision of 
-            <strong>Dr. Yi Hua</strong>. My current research focuses on ocular biomechanics, especially the 
+            At present, I am working in the
+            <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory</a>
+            at the University of Mississippi under the supervision of
+            <strong>Dr. Yi Hua</strong>. My current research focuses on ocular biomechanics, especially the
             deformation of the sclera and optic nerve head in relation to myopia progression.
           </p>
 
           <p>
-            My work involves tools such as SolidWorks, ABAQUS, Gmsh, and FEBio Studio/Solver. I am also interested 
-            in biomedical acoustics, computational physics, and interdisciplinary research connecting engineering 
+            My work involves tools such as SolidWorks, ABAQUS, Gmsh, and FEBio Studio/Solver. I am also interested
+            in biomedical acoustics, computational physics, and interdisciplinary research connecting engineering
             and biological systems.
           </p>
 
-          <!-- LINKS -->
           <div class="links">
             <a href="https://www.linkedin.com/in/utsabacharya" target="_blank">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank">Google Scholar</a>
             <a href="https://www.facebook.com/utsababhagi1" target="_blank">Facebook</a>
-           
           </div>
         </div>
 
-        <!-- IMAGE -->
         <div class="hero-image">
           <img src="Utsab_Photo.jpeg" alt="Utsab Acharya">
         </div>
@@ -228,14 +275,12 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     uacharya@go.olemiss.edu | utsab.acharyaphy@gmail.com | (+1) 6623800669
   </footer>
 
 </body>
 </html>
-
 
 
 
