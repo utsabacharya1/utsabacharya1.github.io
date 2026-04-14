@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Utsab Acharya | About Me</title>
+
   <style>
     body {
       margin: 0;
@@ -19,6 +20,7 @@
       padding: 0 24px;
     }
 
+    /* NAVIGATION BAR */
     nav {
       border-bottom: 1px solid #ddd;
       padding: 18px 0;
@@ -28,20 +30,35 @@
     nav .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 28px;
+      gap: 18px;
       justify-content: center;
     }
 
+    /* TAB STYLE (RECTANGLE ROUNDED) */
     nav a {
       text-decoration: none;
-      color: #222;
+      color: #333;
       font-size: 1rem;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background-color: #f8f8f8;
+      transition: all 0.25s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #0b4f8a;
+      color: white;
+      border-color: #0b4f8a;
     }
 
+    nav a.active {
+      background-color: #0b4f8a;
+      color: white;
+      border-color: #0b4f8a;
+    }
+
+    /* HERO SECTION */
     .hero {
       padding: 60px 0 40px;
     }
@@ -50,7 +67,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      gap: 50px;
+      gap: 60px;
       flex-wrap: wrap;
     }
 
@@ -78,15 +95,22 @@
       text-align: justify;
     }
 
-    ..hero-image {
-  flex: 0 0 350px;
-}
-    .hero-image img {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
+    /* IMAGE (FIXED SIZE - BIGGER) */
+    .hero-image {
+      flex: 0 0 350px;
+      text-align: right;
+    }
 
+    .hero-image img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border: 1px solid #ccc;
+      padding: 4px;
+      background-color: #fff;
+    }
+
+    /* LINKS */
     .links {
       margin-top: 18px;
     }
@@ -103,10 +127,7 @@
       text-decoration: underline;
     }
 
-    .section-space {
-      height: 20px;
-    }
-
+    /* FOOTER */
     footer {
       border-top: 1px solid #ddd;
       margin-top: 40px;
@@ -116,6 +137,7 @@
       color: #555;
     }
 
+    /* RESPONSIVE */
     @media (max-width: 850px) {
       .hero-content {
         flex-direction: column-reverse;
@@ -141,12 +163,14 @@
     }
   </style>
 </head>
+
 <body>
 
+  <!-- NAVIGATION -->
   <nav>
     <div class="container">
       <div class="nav-links">
-        <a href="index.html">About Me</a>
+        <a href="index.html" class="active">About Me</a>
         <a href="cv.html">Curriculum Vitae</a>
         <a href="outreach.html">Community Outreach</a>
         <a href="research.html">Research Papers</a>
@@ -155,10 +179,12 @@
     </div>
   </nav>
 
+  <!-- MAIN CONTENT -->
   <main class="hero">
     <div class="container">
       <div class="hero-content">
-        
+
+        <!-- TEXT -->
         <div class="hero-text">
           <h1>Utsab Acharya</h1>
           <h2>PhD Student in Biomedical Engineering | Physicist | Data Analyst</h2>
@@ -172,34 +198,28 @@
 
           <p>
             At present, I am working in the 
-            <a href="https://www.visionlaboratory.org/people" target="_blank" rel="noopener noreferrer">Vision Laboratory</a> 
+            <a href="https://www.visionlaboratory.org/people" target="_blank">Vision Laboratory</a> 
             at the University of Mississippi under the supervision of 
             <strong>Dr. Yi Hua</strong>. My current research focuses on ocular biomechanics, especially the 
-            deformation of the sclera and optic nerve head in relation to myopia progression. I am particularly 
-            interested in computational modeling and inverse finite element analysis to better understand the 
-            mechanical behavior of soft ocular tissues.
+            deformation of the sclera and optic nerve head in relation to myopia progression.
           </p>
 
           <p>
-            My work involves the use of tools such as SolidWorks, ABAQUS, Gmsh, and FEBio Studio/Solver. 
-            In addition to biomechanics, I also have research experience in biomedical acoustics, ultrasound-based 
-            studies, and computational physics. Through my academic journey, I have developed strong interests in 
-            interdisciplinary research that brings together physics, engineering, biology, and data-driven methods.
+            My work involves tools such as SolidWorks, ABAQUS, Gmsh, and FEBio Studio/Solver. I am also interested 
+            in biomedical acoustics, computational physics, and interdisciplinary research connecting engineering 
+            and biological systems.
           </p>
 
-          <p>
-            This website presents an overview of my academic background, curriculum vitae, community outreach, 
-            research papers, and selected photographs from my professional and academic activities.
-          </p>
-
+          <!-- LINKS -->
           <div class="links">
-            <a href="https://www.linkedin.com/in/utsabacharya" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a href="https://www.facebook.com/utsababhagi1" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="Acharya, Utsab CV_New.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
+            <a href="https://www.linkedin.com/in/utsabacharya" target="_blank">LinkedIn</a>
+            <a href="https://scholar.google.com/citations?user=o_PeA6gAAAAJ&hl=en" target="_blank">Google Scholar</a>
+            <a href="https://www.facebook.com/utsababhagi1" target="_blank">Facebook</a>
+            <a href="Acharya, Utsab CV_New.pdf" target="_blank">View CV</a>
           </div>
         </div>
 
+        <!-- IMAGE -->
         <div class="hero-image">
           <img src="Utsab_Photo.jpeg" alt="Utsab Acharya">
         </div>
@@ -208,6 +228,7 @@
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     uacharya@go.olemiss.edu | utsab.acharyaphy@gmail.com | (+1) 6623800669
   </footer>
